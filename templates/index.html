@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <style>
+      .xyz {
+        font-weight: bold;
+        font-size: x-large;
+      }
+      .white_lable
+      {
+       color: white;
+      }
+      body
+      {
+        text-align:center;
+        align:center;
+        background-image: url({{url_for('static', filename='builtin/2.jpg')}})
+      }
+      input[type=text] {
+      width: 50%;
+      font-size: larger;
+      padding: 12px 20px;
+      margin: 1px 0;
+      box-sizing: border-box;
+      }
+    </style>
+  </head>
+<body>
+<h1 style = "text-align: center; font-size: xx-large;">Engineering Placements Prediction</h1>
+<form action="/submit" method='post'>
+    <label class="xyz" for="Age">Age:</label><br>
+    <input type="text" id="txtage"  name="Age" value="0"><br><br>
+    <label class="xyz" for="Gender">Gender:</label><br>
+    <input type="text" id="txtgender" name="Gender" value="0"><br>
+    <label class="xyz" for="Stream ">Stream:</label><br>
+    <input type="text" id="Stream" name="Stream" value="0"><br><br>
+    <label class="xyz" for="Internships">Internships:</label><br>
+    <input type="text" id="Internships" name="Internships" value="0"><br><br>
+    <label class="xyz" for="CGPA ">CGPA:</label><br>
+    <input type="text" id="CGPA" name="CGPA" value="0"><br><br>
+    <label class="xyz" for="Hostel">Hostel:</label><br>
+    <input type="text" id="Hostel" name="Hostel" value="0"><br><br>
+    <label class="xyz" for="HistoryOfBacklogs">HistoryOfBacklogs:</label><br>
+    <input type="text" id="HistoryOfBacklogs" name="HistoryOfBacklogs" value="0"><br><br>
+   
+    <h1>{{result}} </h1>
+    
+    <input type="submit" value="Submit">
+  </form> 
+</body>
+</html>
